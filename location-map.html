@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Схема проезда</title>
+</head>
+<body>
+    <header>
+        <a href=""><img class="header-logo" src="img/logo.png" alt=""></a>
+        <nav class="navHeader">
+            <a class="montserat nav-link" href="index.html">Главная</a>
+            <a class="montserat nav-link" href="choose-house.html">Выбор дома</a>
+            <a class="montserat nav-link" href="gallery.html">Галерея</a>
+            <a class="montserat nav-link" href="location-map.html">Схема проезда</a>
+            <a class="montserat nav-link" href="contacts.html">Контакты</a>
+        </nav>
+        <div class="mobile-menu">
+            <button class="mobile-menu-button"><img src="img/menu-icon.svg" alt="" class="mobile-menu-icon" id="mobileMenuIcon"></button>
+            <nav class="navHeaderMobile" style='display: none'>
+                <a class="montserat nav-link" href="index.html">Главная</a>
+                <a class="montserat nav-link" href="choose-house.html">Выбор дома</a>
+                <a class="montserat nav-link" href="gallery.html">Галерея</a>
+                <a class="montserat nav-link" href="location-map.html">Схема проезда</a>
+                <a class="montserat nav-link" href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <div class="location">
+        <div class="location-description">
+            "Просто-ква-ква-шино" находится в 20 минутах езды от города Волгограда
+            <br>Двигаясь по второй продольной cо стороны Красноармейского района, необходимо повернуть на Горной поляне налево, напротив поста ГАИ
+            <br>Усли вы едете со стороны Советского района, то поворачиваете на Горной поляне направо, напротив поста ГАИ
+            <br>Далее нужно ехать в сторону Варваровского водохранилища около 10км
+            <br>Через 400 м. после Ж.Д. переезда поворот направо (указатель пос. Гули Королевой)
+            <br>В поселке, перед авт. остановкой и магазином повернуть налево, и через 100 м. повернуть направо, по крайней улице поселка выезжаете на грунтовую дорогу (см. схему проезда). 
+            <br>Протяженность грунтовой дороги около 5 км. 
+            <br>Если у Вас возникнут вопросы, вы можете узнать дополнительную информацию по телефонам: 
+            <br>8-906-410-10-46, 8-902-310-02-30.
+        </div>
+        <div class="location-frame">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1LR8lnQUUSsyHp5LPak4K_460ggg&ehbc=2E312F"></iframe>
+        </div>
+    </div>
+    <div class="zoom_image_modal">
+        <span class="image_modal_body">
+          <span class="close_modal_button"><img loading="lazy" class="close_modal_button_image" src="img/close.svg" alt=""></span>
+          <img loading="lazy" class="image_modal_content">
+        </span>
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="gallery.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

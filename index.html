@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Добро пожаловать!</title>
+</head>
+<body>
+    <header>
+        <a href=""><img class="header-logo" src="img/logo.png" alt=""></a>
+        <nav class="navHeader">
+            <a class="montserat nav-link" href="index.html">Главная</a>
+            <a class="montserat nav-link" href="choose-house.html">Выбор дома</a>
+            <a class="montserat nav-link" href="gallery.html">Галерея</a>
+            <a class="montserat nav-link" href="location-map.html">Схема проезда</a>
+            <a class="montserat nav-link" href="contacts.html">Контакты</a>
+        </nav>
+        <div class="mobile-menu">
+            <button class="mobile-menu-button"><img src="img/menu-icon.svg" alt="" class="mobile-menu-icon" id="mobileMenuIcon"></button>
+            <nav class="navHeaderMobile" style='display: none'>
+                <a class="montserat nav-link" href="index.html">Главная</a>
+                <a class="montserat nav-link" href="choose-house.html">Выбор дома</a>
+                <a class="montserat nav-link" href="gallery.html">Галерея</a>
+                <a class="montserat nav-link" href="location-map.html">Схема проезда</a>
+                <a class="montserat nav-link" href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="content-image">
+            <img src="img/main-photo.jpg" alt="">
+        </div>
+        <div class="content-description">
+            <span>
+                Кусочек солнца, затерявшегося в бескрайней волжской степи, оазис тишины, вкуса искрящейся холодной родниковой воды в жаркий день, чистого воздуха и хорошего настроения от удачной рыбалки, счастья от общения со своими детьми, друзьями и близкими, с теми, кому вы всегда рады, но на общение с которыми у вас всегда так мало времени.
+            </span>
+            <div class="benefits-preface"><p class="preface-start">Все это в </p><p class="preface-bold preface-uppercase">просто-</p><p class="preface-green preface-uppercase">ква-ква</p><p class="preface-bold preface-uppercase">-шино</p></div>
+            <ul class="benefits">
+                <li>2-х, 3-х, 4-х, 6-и местные домики (сплит-система, холодильник, эл. плитка, посуда, постельное белье)</li>
+                <li>Сауна на 6 - 8 человек</li>
+                <li>Большая банкетная беседка на 40 человек</li>
+                <li>Волейбольная площадка</li>
+                <li>Питьевая родниковая вода</li>
+                <li>Небольшой, чистый пруд, где можно поймать рыбу и искупаться</li>
+                <li>Детская площадка</li>
+                <li>Хорошее настроение от ароматного запаха ухи у костра</li>
+            </ul>
+            <p>И все это <a href="location-map.html">рядом!</a></p>
+        </div>
+    </div>
+    <div class="zoom_image_modal">
+        <span class="image_modal_body">
+          <span class="close_modal_button"><img loading="lazy" class="close_modal_button_image" src="img/close.svg" alt=""></span>
+          <img loading="lazy" class="image_modal_content">
+        </span>
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="gallery.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
